@@ -1,0 +1,45 @@
+<div class="container pt-10">
+    <div class="row g-4">
+        <div class="col-md-12">
+            <img src="assets/images/platos/{{recetaActual.imagen}}" [alt]="recetaActual.nombre" class="card-img-top">
+        </div>
+        <div class="col-md-12">
+            <h1>{{recetaActual.nombre}}</h1>
+        </div>
+        <div class="col-md-12">
+            {{recetaActual.descripcion}}
+        </div>
+        <div class="col-md-12" *ngIf="recetaActual.ingredientes">
+            <h2>Ingredientes</h2>
+            <ul>
+                <ng-container *ngFor="let ingrediente of recetaActual.ingredientes">
+                    <li>{{ingrediente.cantidad}} {{ingrediente.ingrediente}}</li>
+                </ng-container>
+            </ul>
+        </div>
+        <div class="col-md-12" *ngIf="recetaActual.instrucciones">
+            <h2>Instrucciones</h2>
+            <ol>
+                <ng-container *ngFor="let instruccion of recetaActual.instrucciones">
+                    <li>{{instruccion.instruccion}}</li>
+                </ng-container>
+            </ol>
+        </div>
+        <div class="col-md-12" *ngIf="recetaActual.utensilios">
+            <h2>Utensilios</h2>
+            <div class="container">
+                <div class="row" *ngFor="let utensilio of recetaActual.utensilios">
+                    <div class="col-md-3">{{utensilio}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12" *ngIf="recetaActual.nutricion">
+            <h2>Nutrición</h2>
+            <div class="container">
+                <div class="row" *ngFor="let nutriente of recetaActual.nutricion">
+                    <div class="col-md-6">{{nutriente.cantidad}} {{nutriente.unidad}} {{nutriente.item}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
