@@ -1,0 +1,47 @@
+{
+    "nombre": "Ají de Gallina",
+    "descripcion": "El ají de gallina es un plato típico de la gastronomía peruana, concretamente de la costa, ​ que consiste en un ají o crema espesa con pechuga de gallina deshilachada. Esta crema es servida con papas cocidas, y en ocasiones con arroz blanco. Es común reemplazar la gallina por pollo.",
+    "imagen": "ajidegallina.jpg",
+    "categoria": "cremas",
+    "info": {
+        "preparacion": 50,
+        "porciones": 4,
+        "dificultad": 2
+    },
+    "ingredientes": [
+        {
+            "cantidad": 1,
+            "ingrediente": "Pechuga de Pollo"
+        },
+        {
+            "cantidad": 2,
+            "ingrediente": "Pan Francés"
+        }
+    ],
+    "instrucciones": [
+        {
+            "orden": 1,
+            "instruccion": "En una olla, cocinar el pollo en agua por 12 minutos para luego deshilacharlo. Reservar el líquido de cocción"
+        },
+        {
+            "orden": 2,
+            "instruccion": "Mientras tanto, remojar los panes en leche y dejarlo reposar."
+        }
+    ],
+    "utensilios": [
+        "lata",
+        "cuenco"
+    ],
+    "nutricion": [
+        {
+            "cantidad": 1042.57,
+            "unidad": "Kcal",
+            "item": "energía"
+        },
+        {
+            "cantidad": 61.84,
+            "unidad": "g",
+            "item": "carbohidratos"
+        }
+    ]
+}
